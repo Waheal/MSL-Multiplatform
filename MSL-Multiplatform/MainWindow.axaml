@@ -1,0 +1,22 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="460"
+		Width="800" Height="460" MinWidth="800" MinHeight="460"
+        x:Class="MSL_Multiplatform.MainWindow"
+        Title="MSL_Multiplatform" WindowStartupLocation="CenterScreen"
+	    Icon="/Assets/icon.ico">
+    <Grid>
+		<TextBox x:Name="JavaPathBox" Text="Java地址" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,10,100,10"/>
+		<Button x:Name="SelectJavaPath" Content="浏览" HorizontalAlignment="Right" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" Width="80" Height="32" Click="SelectJavaPath_Click"/>
+		<TextBox x:Name="ServerPathBox" Text="服务器地址" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,50,100,10"/>
+		<Button x:Name="SelectServerPath" Content="浏览" HorizontalAlignment="Right" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,50" Width="80" Height="32" Click="SelectServerPath_Click"/>    
+		<TextBox x:Name="ServercorePathBox" Text="核心文件名" HorizontalAlignment="Stretch" VerticalAlignment="Top" Margin="10,90,100,10"/>
+		<Button x:Name="SelectServercorePath" Content="浏览" HorizontalAlignment="Right" VerticalAlignment="Top" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,90" Width="80" Height="32" Click="SelectServercorePath_Click"/>
+		<TextBox x:Name="ServeroutputBox" Text="服务器输出" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,130,10,50"/>
+		<TextBox x:Name="SendCmdBox" Text="在此输入指令" HorizontalAlignment="Stretch" VerticalAlignment="Bottom" Margin="10,10,150,10"/>
+		<Button x:Name="SendCmdBtn" Content="发送" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10,10,90,10" Width="60" Height="32"/>
+		<Button x:Name="ControlServerBtn" Content="开服" HorizontalAlignment="Right" VerticalAlignment="Bottom" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Margin="10" Width="70" Height="32" Click="ControlServerBtn_Click"/>
+	</Grid>
+</Window>
